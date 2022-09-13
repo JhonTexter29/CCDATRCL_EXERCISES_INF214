@@ -46,7 +46,7 @@ public class App {
     // 7. Remove the first character of the Linked list.
 STUDENTNUMBERS.remove(0);
     // 8. Display the LinkedList.
-
+System.out.println(STUDENTNUMBERS);
     // STACK (25 points)
     System.out.println("======================================================");
     // 1. Create a Stack of characters of your SURNAME.
@@ -94,6 +94,6 @@ STUDENTNUMBERS.remove(0);
     SURName.push("1");
     SURName.push("4");
     // 7. Print the Stack.
-    System.out.println(SURNAME);
+    System.out.println(SURName);
     }
 }
