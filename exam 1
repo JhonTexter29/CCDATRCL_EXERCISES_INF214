@@ -1,0 +1,99 @@
+import java.util.Stack;
+import java.util.LinkedList;
+
+public class App {
+    public static void main(String[] args) throws Exception {
+
+    // ARRAYS (50 points)
+    System.out.println("======================================================");
+    // 1. Create an array of characters of your SURNAME.
+    char[] SURNAME = { 'E', 'S', 'T', 'I', 'M','A','D','O','R','A' };
+    // 2. Display each character of your SURNAME on each line.
+    for (int i = 0; i < SURNAME.length; i++) {
+        System.out.println(SURNAME[i]);
+    }
+
+    // 3. Display the first character of your SURNAME.
+    System.out.println(SURNAME[0]);
+    // 4. Display the last character of your SURNAME.
+    System.out.println(SURNAME[4]);
+
+    // 5. Display the character of your SURNAME in reverse order.
+    for (int i = SURNAME.length - 1; i >= 0; i--) {
+        System.out.println(SURNAME[i]);
+    }
+
+    // LINKED LIST (25 points)
+    System.out.println("======================================================");
+    // 1. Create a Linked list of the last six numbers of your STUDENT NUMBER.
+    LinkedList<String> STUDENTNUMBERS = new LinkedList<>();
+    STUDENTNUMBERS.add("1");
+    STUDENTNUMBERS.add("0");
+    STUDENTNUMBERS.add("5");
+    STUDENTNUMBERS.add("7");
+    STUDENTNUMBERS.add("6");
+    STUDENTNUMBERS.add("5");
+    // 2. Add an asterisk (*) to the head/front of the Linked list.
+    STUDENTNUMBERS.addFirst("*");
+    // 3. Add an asterisk (*) to the tail/end of the Linked list.
+    STUDENTNUMBERS.addLast("*");
+    // 4. Display the Linked list.
+    System.out.println(STUDENTNUMBERS.get(6));
+    // 5. Display the last character of the Linked list.
+    STUDENTNUMBERS.set(7, "!");
+    // 6. Replace the last character of the Linked list with the exclamation symbol (!).
+    STUDENTNUMBERS.remove("!");
+    // 7. Remove the first character of the Linked list.
+STUDENTNUMBERS.remove(0);
+    // 8. Display the LinkedList.
+
+    // STACK (25 points)
+    System.out.println("======================================================");
+    // 1. Create a Stack of characters of your SURNAME.
+    Stack<String> SURName = new Stack<>();
+
+    // 2. Print the Stack.
+    SURName.push("E");
+    SURName.push("S");
+    SURName.push("T");
+    SURName.push("I");
+    SURName.push("M");
+    SURName.push("A");
+    SURName.push("D");
+    SURName.push("O");
+    SURName.push("R");
+    SURName.push("A");
+    // 3. Add a "INF214" to the stack.
+    SURName.push("I");
+    SURName.push("N");
+    SURName.push("F");
+    SURName.push("2");
+    SURName.push("1");
+    SURName.push("4");
+    // 4. Print the Stack.
+    System.out.println(SURName);
+    // 5. Remove "INF214".
+    SURName.pop();
+    SURName.pop();
+    SURName.pop();
+    SURName.pop();
+    SURName.pop();
+    // 6. Add "CCDATRCL-INF214".
+    SURName.push("C");
+    SURName.push("C");
+    SURName.push("D");
+    SURName.push("A");
+    SURName.push("T");
+    SURName.push("R");
+    SURName.push("C");
+    SURName.push("L");
+    SURName.push("I");
+    SURName.push("N");
+    SURName.push("F");
+    SURName.push("2");
+    SURName.push("1");
+    SURName.push("4");
+    // 7. Print the Stack.
+    System.out.println(SURNAME);
+    }
+}
